@@ -57,6 +57,32 @@ else
 fi
 
 
+# ls - List directory contents
+# ==============================================================================
+alias ls='ls \
+          --color=auto \
+          --group-directories-first \
+          --quoting-style=shell \
+          -Fh'
+alias ll='ls -l'
+alias lr='ls -R'
+alias la='ls -A'
+alias ld='ls -ld'
+alias llr='ls -lR'
+alias lla='ls -lA'
+alias lra='ls -RA'
+alias llra='ls -lRA'
+
+
+# tree - Lists directory contents recursively in a tree view
+# ==============================================================================
+alias tree='tree \
+    --dirsfirst \
+    -CFh'
+
+alias treedu='tree --du'
+
+
 # Appendix A - The `rsync` Command
 # ==============================================================================
 #
@@ -124,4 +150,50 @@ fi
 # `trash-list`      Lists files in trash
 # `trash-empty`     Cleans the trash
 # `trash-rm`        Remove permanently files from trash
+#
+#
+# Appendix D - The `ls` command
+# ==============================================================================
+#
+# `ls` lists directory contents. It has several options, the following are used
+# in this script:
+#
+# --color=auto
+#       Make output colorized
+#       
+# --group-directories-first
+#       Group directories before files
+#
+# --quoting-style=shell
+#       Use shell's quoting styles to quote file names
+#
+# -F    Append file indicator to entries
+#
+# -h    Print human redable sizes
+#
+# -l    Use long listing format
+#
+# -R    Lists subdirectories recursively
+#
+# -A    Shows hidden files
+#
+# -d    Lists the directory itself, not it entries
+#
+#
+# Appendix E - The `tree` command
+# ==============================================================================
+#
+# `tree` lists directory contents recursively in a tree view. It has several
+# options, the following are used in this script:
+#
+# --dirsfirst
+#       Group directories before regular files
+#
+# -C    Make output colorized
+#
+# -F    Append file indicator to entries
+#
+# -h    Print human redable sizes
+#
+# --du  Display size accumulation for every directory
 #

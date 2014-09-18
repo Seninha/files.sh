@@ -25,6 +25,9 @@ directories management (as cp, mk, rm). These commands:
    `rm-list` | Lists files in trash. This command is an alias for `trash`
   `rm-empty` | Cleans the trash. This command is an alias for `trash`
      `rm-rm` | Remove permanently files from trash. This command is an alias for `trash`
+        `ls` | Lists directory contents
+      `tree` | Lists directory contents recursively in a tree view
+    `treedu` | Lists directory contents recursively in a tree view and size of objects
 
 
 ## Installation
