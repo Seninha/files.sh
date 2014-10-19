@@ -2,10 +2,11 @@ files.sh
 ================================================================================
 
 `files.sh` is a small script compatible for bash, zsh and sh and also a zsh plugin
-installable by antigen.
+installable by [antigen][1].
 
 `files.sh` provides tools that replace commands that works with files and
 directories management (as cp, mk, rm). These commands:
+
     - Work both on files and directories
     - Are verbose (tell you what they are doing)
     - Are fast and create a backup (only if you have `rsync` installed)
@@ -41,7 +42,7 @@ Manual installation
         source files.sh
 
 Automatic Installation
-:   If you use *zsh* and *antigen*, add the following line to your `.zshrc`:
+:   If you use *zsh* and [antigen][1], add the following line to your `.zshrc`:
 
         antigen bundle Seninha/files.sh
 
@@ -49,3 +50,6 @@ Automatic Installation
 ## Copyright
 
 This script is placed in Public Domain.
+
+
+[1]: https://github.com/zsh-users/antigen
